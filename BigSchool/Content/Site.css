@@ -3,16 +3,23 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar-inverse {
+    background-color: #8c45c2;
+    border-color: #080808;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
+.navbar-inverse .navbar-nar > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: red;
+}
+
+    /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
+    .dl-horizontal dt {
     white-space: normal;
 }
 
@@ -21,4 +28,34 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.course{
+    list-style:none;
+}
+.course > li{
+    position: relative;
+    margin-bottom: 30px;
+}
+.course > li .date {
+    text-align: center;
+    background-color:red;
+    color:white;
+    width:60px;
+    border-radius:8px;
+}
+.course > li .details {
+    position: absolute;
+    top:0px;
+    left:70px;
+}
+
+.course > li .action {
+    display: none ;
+    left: 70px;
+    position: absolute;
+}
+
+.course > li:hover .action {
+    display: block;       
 }
