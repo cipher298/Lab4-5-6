@@ -18,11 +18,11 @@
             </div>
             <div class="details">
                 <span class="lecturer">
-                    @course.Lecturer.Name
+                    @course.Lecturer.Name                
                     @if (Model.ShowAction)
                     {
                         <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@course.LecturerId">Follow</button>
-                    }
+                    }                 
                 </span>
                 <span class="category">
                     @course.Category.Name
@@ -39,7 +39,7 @@
 @section scripts
 {
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".js-toggle-attendance").click(function (e) {
                 var button = $(e.target);
                 $.post("/api/attendances", { courseId: button.attr("data-course-id") })

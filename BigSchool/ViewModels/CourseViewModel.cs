@@ -23,9 +23,9 @@ namespace BigSchool.ViewModels
         public IEnumerable<Category> Categories { get; set; }
 
         public string Heading { get; set; }
-        public string Action()
+        public string Action
         {
-             return (Id != 0) ? "Update" : "Create"; 
+            get { return (Id != 0) ? "Update" : "Create"; }
         }
         public DateTime GetDateTime()
         {
