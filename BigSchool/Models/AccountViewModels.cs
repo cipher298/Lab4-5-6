@@ -11,6 +11,7 @@ namespace BigSchool.Models
     }
     //
     //
+    //
 
     public class ExternalLoginListViewModel
     {
